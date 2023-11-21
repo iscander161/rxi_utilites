@@ -16,13 +16,15 @@
 /**
  * @brief Enum of RXI-Utils error codes
  */
-typedef enum{
-    RXI_ERROR__ERROR = -1,      /*!< Unknown error */
-    RXI_ERROR__OK = 0,          /*!< Everything is OK */
+typedef enum RxiUtilsErrorCode{
+    RXI_ERROR__OPEN_FILE_ERROR = -2,    /*!< Open file error */
+    RXI_ERROR__ERROR = -1,              /*!< Unknown error */
+    RXI_ERROR__OK = 0,                  /*!< Everything is OK */
 }eRxiUtilsErrorCode;
 
 /**
  * @brief
+ * @param pathToQSysFile
  * @param pathToFile
  * @param HexFileName
  * @return - result of
